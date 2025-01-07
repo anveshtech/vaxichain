@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-columns-0 {
+  @apply grid-cols-none;
+}
+.grid-columns-1 {
+  @apply grid-cols-1;
+}
+.grid-columns-2 {
+  @apply grid-cols-2;
+}
+.grid-columns-3 {
+  @apply grid-cols-3;
+}
+.grid-columns-4 {
+  @apply grid-cols-4;
+}
+.grid-columns-5 {
+  @apply grid-cols-5;
+}
+.grid-columns-6 {
+  @apply grid-cols-6;
+}
+.grid-columns-7 {
+  @apply grid-cols-7;
+}
+.grid-columns-8 {
+  @apply grid-cols-8;
+}
+.grid-columns-9 {
+  @apply grid-cols-9;
+}
+.grid-columns-10 {
+  @apply grid-cols-10;
+}
+.grid-columns-11 {
+  @apply grid-cols-11;
+}
+.grid-columns-12 {
+  @apply grid-cols-12;
+}
+
+.tiptap {
+  @apply h-[200px] overflow-auto;
+}
+.tiptap ul {
+  @apply mx-8 list-disc;
+}
+.tiptap ul ul {
+  @apply mx-8 list-[circle];
+}
+.tiptap ul ul ul {
+  @apply mx-8 list-[square];
+}
+.tiptap ol {
+  @apply mx-8 list-decimal;
+}
+
+.tiptap a {
+  @apply text-blue-600 underline;
+}
+
+/* for tiptap's default placeholder */
+.tiptap p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
+    @apply text-base;
+  }
+  h6 {
+    @apply text-sm;
+  }
+
+  .bg-register-banner {
+    background-image: url("../public/assets/register-page-banner.png");
+  }
+}
+
+@layer components {
+  span.checkbox-switch {
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    border-radius: 9999px;
+    position: relative;
+    background-color: #656667;
+    transition: background-color 0.3s;
+  }
+
+  span.checkbox-switch::after {
+    content: "";
+    display: block;
+    --size: 12px;
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 9999px;
+    background-color: white;
+    top: 50%;
+    left: 4px;
+    transform: translate(0, -50%);
+    transition:
+      left 0.3s,
+      transform 0.3s;
+  }
+
+  input[type="checkbox"].checkbox-switch:checked ~ label > span.checkbox-switch::after {
+    left: calc(100% - 4px);
+    transform: translate(-100%, -50%);
+  }
+
+  input[type="checkbox"].checkbox-switch:checked ~ label > span.checkbox-switch {
+    background-color: purple-700;
+  }
+}

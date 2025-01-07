@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "66d97f47bc9d4ac09c345719"
+  },
+  "name": "Watch",
+  "description": "<p>To be worn on the wrist.</p>",
+  "status": "enabled",
+  "attributes": [
+    {
+      "attributeName": "size"
+    },
+    {
+      "attributeName": "weight"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-05T09:52:07.911Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-05T09:52:07.911Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66da92ffc5ab7201d4ded37f"
+  },
+  "name": "Shoes",
+  "description": "<p>To be worn on you feet</p>",
+  "status": "enabled",
+  "attributes": [
+    {
+      "attributeName": "size"
+    },
+    {
+      "attributeName": "color"
+    },
+    {
+      "attributeName": "weight"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T05:28:31.147Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T05:28:31.147Z"
+  },
+  "__v": 0
+}]

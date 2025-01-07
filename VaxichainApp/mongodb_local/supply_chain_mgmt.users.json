@@ -1,0 +1,388 @@
+[{
+  "_id": {
+    "$oid": "668e8329c8104a4c0bbcf2cf"
+  },
+  "firstName": "Sandil",
+  "lastName": "Adhikari",
+  "email": "adhikarisandil32@gmail.com",
+  "password": "$2b$10$yOp.Ks2N1gbwyn0D4gzW7.R0/9Bk2Xu6sblMJzIfbazeTC2w1x5l2",
+  "phoneNumber": "9876543210",
+  "userType": "super-admin",
+  "companyName": "super admin",
+  "address": "Kathmandu",
+  "createdAt": {
+    "$date": "2024-07-10T12:48:41.616Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T05:13:22.364Z"
+  },
+  "__v": 1,
+  "status": "pending",
+  "productType": []
+},
+{
+  "_id": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "firstName": "Sandil",
+  "lastName": "Adhikari",
+  "email": "sandil@gmail.com",
+  "password": "$2b$10$Tj.MkTKwGd6XKog.rN0noOMv5m/hFNe9TvmsCmC7AooMOkOKLWmSy",
+  "phoneNumber": "9876543210",
+  "userType": "company",
+  "productType": [
+    "watch"
+  ],
+  "companyName": "ABC Pvt. Ltd.",
+  "address": "Kathmandu",
+  "status": "verified",
+  "createdAt": {
+    "$date": "2024-07-17T11:53:24.481Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T11:03:12.038Z"
+  },
+  "__v": 1,
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njk3YjBiNGYyN2Q0OTE4MDAzNDJjZjMiLCJpYXQiOjE3MjYzOTgxOTIsImV4cCI6MTcyNzI2MjE5Mn0.YfyepgbtMb5RbZv4ptuGrKoU_lGQjpKVQckSymcNNvs"
+},
+{
+  "_id": {
+    "$oid": "669cf23e8eeda1dc70e25022"
+  },
+  "firstName": "Sandil",
+  "lastName": "Adhikari",
+  "email": "sandil1@gmail.com",
+  "password": "$2b$10$wgL4KGiuqVetem5AVqB7POApdj9eS3/IPB2t3uL4nsn.roK65Dqmu",
+  "phoneNumber": "9876543210",
+  "userType": "retailer",
+  "productType": [
+    "watch"
+  ],
+  "companyName": "ABC Pvt. Ltd.",
+  "address": "Kathmandu",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-07-21T11:34:22.483Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-21T11:35:19.852Z"
+  },
+  "__v": 0,
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjljZjIzZThlZWRhMWRjNzBlMjUwMjIiLCJpYXQiOjE3MjE1NjE3MTksImV4cCI6MTcyMjQyNTcxOX0.Kd6e8H7Ro1rTEPJn0s6JlJ_M7HgVFIbxxxcRIErz8Cw"
+},
+{
+  "_id": {
+    "$oid": "66d4358f117d369d3dea8721"
+  },
+  "firstName": "Sandil",
+  "lastName": "Adhikari",
+  "email": "sandil4@gmail.com",
+  "password": "$2b$10$evFfa9xiY9CDUZVTmXlwT.ukjYdvLN.9RS6z.NOUN15FE82ILVWTa",
+  "phoneNumber": "9876543210",
+  "userType": "retailer",
+  "productType": [
+    "watch"
+  ],
+  "companyName": "ABC Pvt. Ltd.",
+  "address": "Kathmandu",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T09:36:15.725Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-01T09:36:15.725Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d43a8b321deb00935f8182"
+  },
+  "firstName": "Sandil",
+  "lastName": "Adhikari",
+  "email": "sandil24@gmail.com",
+  "password": "$2b$10$DCn5e3hPhJJpOP4ySTGnkO4nbTG2gj2ArHVfA0O0Admlkc4CA/r/e",
+  "phoneNumber": "9876543210",
+  "userType": "retailer",
+  "productType": [
+    "watch"
+  ],
+  "companyName": "ABC Pvt. Ltd.",
+  "address": {
+    "zip": 1234,
+    "city": "New York",
+    "country": "USA",
+    "addressLine": "123 5th Avenue"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T09:57:31.910Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-01T09:57:31.910Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d43f1b246b8834e79b6396"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "email": "test@gmail.couu",
+  "password": "$2b$10$HQCUkU015s2Azo3Sf1ymP.bBL4PLOE49JYWXliR9k09KZ04OXBbTy",
+  "phoneNumber": "+98374982374",
+  "userType": "company",
+  "productType": [
+    "test"
+  ],
+  "companyName": "test pvt. ltd.",
+  "address": {
+    "zip": 1234,
+    "city": "test",
+    "country": "test",
+    "addressLine": "test"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T10:16:59.707Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T05:12:41.771Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d43fc0246b8834e79b639a"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "email": "test@test.com",
+  "password": "$2b$10$N6E0s8C90OJjR3nVgcNdg.5ERvnHCMFhMDpQeVmjoebpQx.MLQdMC",
+  "phoneNumber": "+92837498245",
+  "userType": "retailer",
+  "productType": [
+    "bike"
+  ],
+  "companyName": "test pvt. ltd.",
+  "address": {
+    "zip": 2342,
+    "city": "test",
+    "country": "test",
+    "addressLine": "test"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T10:19:44.322Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-01T10:19:44.322Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d44005246b8834e79b639e"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "email": "test@example.com",
+  "password": "$2b$10$HNwB1jaG6ZRev3GGWDShZ.9z8GISKW89gi6fAC1v2/CISmedjs252",
+  "phoneNumber": "+923874928347",
+  "userType": "retailer",
+  "productType": [
+    "bike"
+  ],
+  "companyName": "test company pvt. ltd.",
+  "address": {
+    "zip": 234,
+    "city": "setset",
+    "country": "test",
+    "addressLine": "testtest"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T10:20:53.430Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-01T10:20:53.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d44027246b8834e79b63a2"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "email": "test2@example.com",
+  "password": "$2b$10$XYj/nLeXS7WKRr7.0U9kRuDghlzxOajfRjQqN3GjmiOidAhE9Tc4G",
+  "phoneNumber": "+923874928347",
+  "userType": "retailer",
+  "productType": [
+    "bike"
+  ],
+  "companyName": "test company pvt. ltd.",
+  "address": {
+    "zip": 234,
+    "city": "setset",
+    "country": "test",
+    "addressLine": "testtest"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T10:21:27.112Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-01T10:21:27.112Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d4403e246b8834e79b63a6"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "email": "test2adf@example.com",
+  "password": "$2b$10$h0hV4kCvofWdOXUVGYKwr.KMyqZ5JXu0cGUFQePYBOqqk6.cDZOlS",
+  "phoneNumber": "+923874928347",
+  "userType": "retailer",
+  "productType": [
+    "bike"
+  ],
+  "companyName": "test company pvt. ltd.",
+  "address": {
+    "zip": 234,
+    "city": "setset",
+    "country": "test",
+    "addressLine": "testtest"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T10:21:50.039Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-01T10:21:50.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d441a7246b8834e79b63aa"
+  },
+  "firstName": "Test",
+  "lastName": "Test",
+  "email": "idontknow@unknown.com",
+  "password": "$2b$10$5w/VWWz1pgNJzWo9OY4oXOHEdv.XDVbSRFvO8aTT3Ii77Sn/MhjhG",
+  "phoneNumber": "+8732948273490",
+  "userType": "retailer",
+  "productType": [
+    "Noting"
+  ],
+  "companyName": "NoName Pvt. Ltd.",
+  "address": {
+    "zip": 12345,
+    "city": "Biratnagar",
+    "country": "Nepal",
+    "addressLine": "jamungachhi chowk, ayurvedic road"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T10:27:51.821Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-01T10:29:11.901Z"
+  },
+  "__v": 0,
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ0NDFhNzI0NmI4ODM0ZTc5YjYzYWEiLCJpYXQiOjE3MjUxODY1NTEsImV4cCI6MTcyNjA1MDU1MX0.ZU3253vnGJxWA-BYs84SarFu8vwUMM3w39iQKVst2b0"
+},
+{
+  "_id": {
+    "$oid": "66d449c2246b8834e79b63ba"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "email": "test@testtest.test",
+  "password": "$2b$10$YaG4g72KV.JqaUVyIxNB7OU70YL2Zp2jnWlu0mZPYP2/N9SboD/0i",
+  "phoneNumber": "+83982333333",
+  "userType": "company",
+  "productType": [
+    "test"
+  ],
+  "companyName": "test test",
+  "address": {
+    "zip": 234,
+    "city": "test",
+    "country": "test",
+    "addressLine": "test"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-01T11:02:26.676Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-01T11:02:43.846Z"
+  },
+  "__v": 0,
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ0NDljMjI0NmI4ODM0ZTc5YjYzYmEiLCJpYXQiOjE3MjUxODg1NjMsImV4cCI6MTcyNjA1MjU2M30.C5mFY8rW7rGooRfBPvuDwrAkKWewDpPcU77sLUn3oMY"
+},
+{
+  "_id": {
+    "$oid": "66d56b9bd6ff4771eb2fcc0c"
+  },
+  "firstName": "Sandil",
+  "lastName": "Adhikari",
+  "email": "sandil234@gmail.com",
+  "password": "$2b$10$D58shH3okhkRKNjfRbvm1e1wGc49zA3ckxlqdG64aPkak3SzBZAnW",
+  "phoneNumber": "9876543210",
+  "userType": "retailer",
+  "productType": [
+    "watch"
+  ],
+  "companyName": "ABC Pvt. Ltd.",
+  "address": {
+    "zip": 1234,
+    "city": "New York",
+    "country": "USA",
+    "addressLine": "123 5th Avenue"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-02T07:39:08.046Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-09T11:16:24.220Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d96deebc9d4ac09c3456a0"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "email": "adfasf@adfadsf.adsf",
+  "password": "$2b$10$J2QQu9pTi2gbf.SBssraC.5d9QcyMnwjc0C.UYkNLxdOPMloG1dDa",
+  "phoneNumber": "+982349827349",
+  "userType": "company",
+  "productType": [
+    "adfasdf"
+  ],
+  "companyName": "adfasdfasdf",
+  "address": {
+    "zip": 23,
+    "city": "adsfa",
+    "country": "fasdfasdf",
+    "addressLine": "tteasdfa"
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2024-09-05T08:38:06.172Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-05T08:38:06.172Z"
+  },
+  "__v": 0
+}]

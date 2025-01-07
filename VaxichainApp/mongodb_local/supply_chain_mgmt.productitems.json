@@ -1,0 +1,410 @@
+[{
+  "_id": {
+    "$oid": "66e0314c5c99ad918bf180a5"
+  },
+  "productName": "Claiber Shoes",
+  "productDescription": "very comfortable for your feet",
+  "productPrice": 1200,
+  "productSku": 4,
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66da92ffc5ab7201d4ded37f"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "15",
+      "_id": {
+        "$oid": "66e0314c5c99ad918bf180a6"
+      }
+    }
+  ],
+  "slug": "claiber-shoes-1",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1725968716/hhlvlkloum4ybopur4pt.png",
+  "createdAt": {
+    "$date": "2024-09-10T11:45:16.518Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-10T11:45:16.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e033985c99ad918bf180cb"
+  },
+  "productName": "Rolex",
+  "productDescription": "<p>This is the latest modal of the product.</p>",
+  "productPrice": 2500,
+  "productSku": 12,
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66d97f47bc9d4ac09c345719"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "15",
+      "_id": {
+        "$oid": "66e033985c99ad918bf180cc"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "775g",
+      "_id": {
+        "$oid": "66e033985c99ad918bf180cd"
+      }
+    }
+  ],
+  "slug": "rolex-1",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1725969304/zy7uhgmwxa5yadmhagnq.png",
+  "createdAt": {
+    "$date": "2024-09-10T11:55:04.280Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-10T11:55:04.280Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e0869fc25a62c11476d879"
+  },
+  "productName": "Seiko",
+  "productDescription": "<p>Weat it on wrist.</p>",
+  "productPrice": 18,
+  "productSku": 12,
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66d97f47bc9d4ac09c345719"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "16",
+      "_id": {
+        "$oid": "66e0869fc25a62c11476d87a"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "750g",
+      "_id": {
+        "$oid": "66e0869fc25a62c11476d87b"
+      }
+    }
+  ],
+  "slug": "seiko-1",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1725990560/cdc6fuanq2kzly4pgss4.png",
+  "createdAt": {
+    "$date": "2024-09-10T17:49:19.735Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-10T17:49:19.735Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e086f8c25a62c11476d889"
+  },
+  "productName": "GoldStar Shoes",
+  "productDescription": "<p>Made In Nepal. Loved Everywhere.</p>",
+  "productPrice": 1549,
+  "productSku": 123,
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66da92ffc5ab7201d4ded37f"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "18",
+      "_id": {
+        "$oid": "66e086f8c25a62c11476d88a"
+      }
+    },
+    {
+      "attributeName": "color",
+      "attributeValue": "black",
+      "_id": {
+        "$oid": "66e086f8c25a62c11476d88b"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "775g",
+      "_id": {
+        "$oid": "66e086f8c25a62c11476d88c"
+      }
+    }
+  ],
+  "slug": "goldstar-shoes-1",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1725990648/nwxtjrh7ops0kuewbr9k.png",
+  "createdAt": {
+    "$date": "2024-09-10T17:50:48.404Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-10T17:50:48.404Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e27b66ac85804a9c60fb86"
+  },
+  "productName": "Claiber Shoes",
+  "productDescription": "very comfortable for your feet",
+  "productPrice": 1200,
+  "productSku": "4",
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66da92ffc5ab7201d4ded37f"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "15",
+      "_id": {
+        "$oid": "66e27b66ac85804a9c60fb87"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "275g",
+      "_id": {
+        "$oid": "66e27b66ac85804a9c60fb88"
+      }
+    }
+  ],
+  "slug": "claiber-shoes-2",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1726118759/qy9k88bfmidyx7vwo4yi.png",
+  "createdAt": {
+    "$date": "2024-09-12T05:25:58.942Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-12T05:25:58.942Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e695d99389a61103336b49"
+  },
+  "productName": "Test",
+  "productDescription": "<p>This is a test product created for testing purpose only</p>",
+  "productPrice": 1200,
+  "productSku": "ABC-12-XYZ",
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66d97f47bc9d4ac09c345719"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "22",
+      "_id": {
+        "$oid": "66e695d99389a61103336b4a"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "1000g",
+      "_id": {
+        "$oid": "66e695d99389a61103336b4b"
+      }
+    }
+  ],
+  "slug": "test-1",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1726387673/fpexkhd6uu29sze2ob1c.png",
+  "createdAt": {
+    "$date": "2024-09-15T08:07:53.471Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T08:07:53.471Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e698259389a61103336bbc"
+  },
+  "productName": "Test Product",
+  "productDescription": "<p>test test test</p>",
+  "productPrice": 12,
+  "productSku": "ABC-12-XYZ",
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66d97f47bc9d4ac09c345719"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "15",
+      "_id": {
+        "$oid": "66e698259389a61103336bbd"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "775g",
+      "_id": {
+        "$oid": "66e698259389a61103336bbe"
+      }
+    }
+  ],
+  "slug": "test-product-2",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1726388261/nga41c6rhtvqkvgttxtp.png",
+  "createdAt": {
+    "$date": "2024-09-15T08:17:41.285Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T08:17:41.285Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e6997f9389a61103336bfe"
+  },
+  "productName": "Test Product ",
+  "productDescription": "<p>tes test test test </p>",
+  "productPrice": 156,
+  "productSku": "ABC-12-XYZA",
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66d97f47bc9d4ac09c345719"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "18",
+      "_id": {
+        "$oid": "66e6997f9389a61103336bff"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "750g",
+      "_id": {
+        "$oid": "66e6997f9389a61103336c00"
+      }
+    }
+  ],
+  "slug": "test-product-3",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1726388607/wjax0dxajttisynjqdg8.png",
+  "createdAt": {
+    "$date": "2024-09-15T08:23:27.605Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T08:23:27.605Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e699fb9389a61103336c30"
+  },
+  "productName": "Dell Inspiron 3375",
+  "productDescription": "<p>random laptop model </p>",
+  "productPrice": 1200,
+  "productSku": "ABC-12-XYZA",
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66d97f47bc9d4ac09c345719"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "15",
+      "_id": {
+        "$oid": "66e699fb9389a61103336c31"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "1200g",
+      "_id": {
+        "$oid": "66e699fb9389a61103336c32"
+      }
+    }
+  ],
+  "slug": "dell-inspiron-3375-1",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1726388731/dpgpnkz4pkoognbsj1yf.png",
+  "createdAt": {
+    "$date": "2024-09-15T08:25:31.222Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T08:25:31.222Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e69d869389a61103336c7d"
+  },
+  "productName": "Test Product",
+  "productDescription": "<p>test test test</p>",
+  "productPrice": 123,
+  "productSku": "ABC-12-XYZ",
+  "productStatus": "completed",
+  "productType": {
+    "$oid": "66d97f47bc9d4ac09c345719"
+  },
+  "productManufacturer": {
+    "$oid": "6697b0b4f27d491800342cf3"
+  },
+  "productAttributes": [
+    {
+      "attributeName": "size",
+      "attributeValue": "16",
+      "_id": {
+        "$oid": "66e69d869389a61103336c7e"
+      }
+    },
+    {
+      "attributeName": "weight",
+      "attributeValue": "775g",
+      "_id": {
+        "$oid": "66e69d869389a61103336c7f"
+      }
+    }
+  ],
+  "slug": "test-product-4",
+  "qrUrl": "https://res.cloudinary.com/dauagqzqv/image/upload/v1726389638/y5c7aaszcd9ubdgbh07i.png",
+  "createdAt": {
+    "$date": "2024-09-15T08:40:38.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T08:40:38.190Z"
+  },
+  "__v": 0
+}]

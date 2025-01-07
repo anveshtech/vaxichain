@@ -1,0 +1,50 @@
+{
+	"name": "test-network",
+	"version": "1.0.0",
+	"client": {
+		"tlsEnable": true,
+		"adminCredential": {
+			"id": "exploreradmin",
+			"password": "exploreradminpw"
+		},
+		"enableAuthentication": true,
+		"organization": "dataCollectorMSP",
+		"connection": {
+			"timeout": {
+				"peer": {
+					"endorser": "300"
+				},
+				"orderer": "300"
+			}
+		}
+	},
+	"channels": {
+		"mychannel": {
+			"peers": {
+				"peer0.datacollector.dataauth.com": {}
+			}
+		}
+	},
+  "organizations": {
+		"dataCollectorMSP": {
+			"mspid": "dataCollectorMSP",
+			"adminPrivateKey": {
+				"path": "/etc/data/peerOrganizations/datacollector.dataauth.com/users/Admin@datacollector.dataauth.com/msp/keystore/priv_sk"
+			},
+			"peers": [
+				["peer0.datacollector.dataauth.com"]
+			],
+			"signedCert": {
+				"path": "/etc/data/peerOrganizations/datacollector.daatauth.com/users/Admin@datacollector.dataauth.com/msp/signcerts/cert.pem"
+			}
+		}
+	},
+  "peers": {
+		"peer0.datacollector.dataauth.com": {
+			"tlsCACerts": {
+				"path": "/etc/data/peerOrganizations/datacollector.datauth.com/peers/peer0.datacollector.dataauth.com/tls/ca.crt"
+			},
+			"url": "grpcs://peer0.datacollector.datauth.com:7051"
+		}
+	}
+}
