@@ -14,10 +14,10 @@ const path = require('path');
 
 const constants = require('./connection-profile/constants.json')
 
-const host = process.env.HOST || constants.host;
+// const host = process.env.HOST || constants.host;
 const port = process.env.PORT || constants.port;
 
-// const host = process.env.HOST || '0.0.0.0';
+const host = process.env.HOST || '0.0.0.0';
 // const port = "4000"
 
 var helper = require('./app/helper')
@@ -26,6 +26,7 @@ var docker = require('./app/dockerContainer')
 var channel = require('./app/createChannel')
 var deploy = require('./app/deployChaincode')
 var invoke = require('./app/invoke')
+var query = require('./app/query')
 
 app.options('*', cors());
 app.use(cors());
@@ -624,9 +625,8 @@ app.post('/setup-network-datacollector', async (req, res) => {
         await generate.generateConfigTx(orgName, domain, peerPort);
         await generate.createOrg(orgName.toLowerCase(), `localhost:${caPort}`, adminUser, adminPassword, domain);
         await generate.generateNewOrgDefinition(orgName, domain);
-        await generate.generateNewProfile(orgName);
-
         await generate.generateConfigProfile(orgName, peerPort, caPort);
+        await generate.generateNewProfile(orgName);
 
         // Step 3: Create Docker Compose for peer and CouchDB
         const dockerComposeFilePath = await generate.createDockerComposeFile(orgName, domain, peerPort, couchPort, network);
@@ -637,8 +637,10 @@ app.post('/setup-network-datacollector', async (req, res) => {
         const createBlockResult = await channel.createChannelBlock(channelName, profile);
         const createChannelResult = await channel.createChannel(channelName);
 
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 4000));
         const joinChannelResult = await channel.joinChannel(channelName, orgName, peerPort);
+
+        // await generate.generateConfigProfile(orgName, peerPort, caPort);
 
         // Respond with success message and details
         res.status(200).json({

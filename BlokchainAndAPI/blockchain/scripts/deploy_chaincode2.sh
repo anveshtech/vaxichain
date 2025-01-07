@@ -13,12 +13,12 @@ CHANNEL_NAME="$6"
 ORDERER_CA="$7"
 PEER_ADDRESS="$8"
 orgNAME="$9"
-mspName=${10}
+mspName="${10}"
 
 export CORE_PEER_TLS_ENABLED=true
 
 export FABRIC_CFG_PATH=${PWD}/../artifacts/channel/config
-export CORE_PEER_LOCALMSPID="Org3MSP"
+export CORE_PEER_LOCALMSPID=${mspName}
 export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/../artifacts/channel/crypto-config/peerOrganizations/${orgNAME}.dataauth.com/peers/peer0.${orgNAME}.dataauth.com/tls/ca.crt
 export CORE_PEER_MSPCONFIGPATH=${PWD}/../artifacts/channel/crypto-config/peerOrganizations/${orgNAME}.dataauth.com/users/Admin@${orgNAME}.dataauth.com/msp/
 export CORE_PEER_ADDRESS=${PEER_ADDRESS}
@@ -41,7 +41,7 @@ queryInstalled() {
 approve() {
     export CORE_PEER_TLS_ENABLED=true
     export FABRIC_CFG_PATH=${PWD}/../artifacts/channel/config
-    export CORE_PEER_LOCALMSPID="Org3MSP"
+    export CORE_PEER_LOCALMSPID=${mspName}
     export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/../artifacts/channel/crypto-config/peerOrganizations/${orgNAME}.dataauth.com/peers/peer0.${orgNAME}.dataauth.com/tls/ca.crt
     export CORE_PEER_MSPCONFIGPATH=${PWD}/../artifacts/channel/crypto-config/peerOrganizations/${orgNAME}.dataauth.com/users/Admin@${orgNAME}.dataauth.com/msp/
     export CORE_PEER_ADDRESS=${PEER_ADDRESS}

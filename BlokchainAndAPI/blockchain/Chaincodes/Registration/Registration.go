@@ -16,7 +16,7 @@ var logger = flogging.MustGetLogger("Registration_contract")
 type RegistrationContract struct{}
 
 type CompanyName struct {
-	ID   string `json:"_id"`
+	ID   string `json:"appleId"`
 	Name string `json:"name"`
 }
 
@@ -30,8 +30,8 @@ type Address struct {
 type User struct {
 	UserID     string      `json:"id"`
 	Company    CompanyName `json:"organization"`
-	FirstName  string      `json:"first_name"`
-	LastName   string      `json:"last_name"`
+	FirstName  string      `json:"firstName"`
+	LastName   string      `json:"lastName"`
 	Email      string      `json:"email"`
 	Phone      int         `json:"phone"`
 	Password   string      `json:"password"`
@@ -60,7 +60,7 @@ func (rc *RegistrationContract) AddAdminUser(stub shim.ChaincodeStubInterface, u
 	}
 
 	// Ensure unique user ID
-	exists, err := rc.UserExists(stub, userID)
+	exists, err := rc.AdminUserExists(stub, userID)
 	if err != nil {
 		return shim.Error(fmt.Sprintf("failed to check if user exists: %v", err))
 	}
@@ -108,8 +108,8 @@ func (rc *RegistrationContract) AddAdminUser(stub shim.ChaincodeStubInterface, u
 	return shim.Success(nil)
 }
 
-// UserExists checks if a user exists by user ID
-func (rc *RegistrationContract) UserExists(stub shim.ChaincodeStubInterface, userID string) (bool, error) {
+// AdminUserExists checks if a user exists by user ID
+func (rc *RegistrationContract) AdminUserExists(stub shim.ChaincodeStubInterface, userID string) (bool, error) {
 	userBytes, err := stub.GetState(userID)
 	if err != nil {
 		return false, fmt.Errorf("failed to read from world state: %v", err)
@@ -117,8 +117,8 @@ func (rc *RegistrationContract) UserExists(stub shim.ChaincodeStubInterface, use
 	return userBytes != nil, nil
 }
 
-// QueryUser retrieves a user from the ledger by user ID
-func (rc *RegistrationContract) QueryUser(stub shim.ChaincodeStubInterface, userID string) (*User, error) {
+// QueryAdminUser retrieves a user from the ledger by user ID
+func (rc *RegistrationContract) QueryAdminUser(stub shim.ChaincodeStubInterface, userID string) (*User, error) {
 	userBytes, err := stub.GetState(userID)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read user: %v", err)
@@ -135,15 +135,15 @@ func (rc *RegistrationContract) QueryUser(stub shim.ChaincodeStubInterface, user
 	return &user, nil
 }
 
-func (rc *RegistrationContract) GetUsersWithHashes(APIstub shim.ChaincodeStubInterface, ids []string) peer.Response {
+func (rc *RegistrationContract) GetAdminUsersWithHashes(APIstub shim.ChaincodeStubInterface, ids []string) peer.Response {
 	// Prepare a slice to hold the results
 	var userHashes []map[string]interface{}
 
 	// Iterate over each provided ID
 	for _, id := range ids {
 
-		// Query the User using the QueryUser method
-		User, err := rc.QueryUser(APIstub, id)
+		// Query the User using the QueryAdminUser method
+		User, err := rc.QueryAdminUser(APIstub, id)
 		if err != nil {
 			// If User not found, mark as pending
 			userHash := map[string]interface{}{
@@ -189,10 +189,10 @@ func (rc *RegistrationContract) GetUsersWithHashes(APIstub shim.ChaincodeStubInt
 	return shim.Success(responseBytes)
 }
 
-// UpdateUser updates an existing user in the ledger
-func (rc *RegistrationContract) UpdateUser(stub shim.ChaincodeStubInterface, userID, companyID, companyName, firstName, lastName, email string, phone, zip int, city, country, addressLine, usertype, password, status string, remarks *string, profilePic *string, createdAt, updatedAt string) peer.Response {
+// AdminUpdateUser updates an existing user in the ledger
+func (rc *RegistrationContract) AdminUpdateUser(stub shim.ChaincodeStubInterface, userID, companyID, companyName, firstName, lastName, email string, phone, zip int, city, country, addressLine, usertype, password, status string, remarks *string, profilePic *string, createdAt, updatedAt string) peer.Response {
 	// Ensure the user exists
-	exists, err := rc.UserExists(stub, userID)
+	exists, err := rc.AdminUserExists(stub, userID)
 	if err != nil {
 		return shim.Error(fmt.Sprintf("failed to check if user exists: %v", err))
 	}
@@ -246,7 +246,7 @@ func (rc *RegistrationContract) Invoke(stub shim.ChaincodeStubInterface) peer.Re
 	case "AddAdminUser":
 		// args: userID, companyID, companyName, firstName, lastName, email, phone, password
 		if len(args) != 18 {
-			return shim.Error("incorrect number of arguments. Expecting 17")
+			return shim.Error("incorrect number of arguments. Expecting 18")
 		}
 		var remarks *string
 		var profilePic *string
@@ -266,18 +266,18 @@ func (rc *RegistrationContract) Invoke(stub shim.ChaincodeStubInterface) peer.Re
 			return shim.Error("Failed to convert zip to int: " + err.Error())
 		}
 		return rc.AddAdminUser(stub, args[0], args[1], args[2], args[3], args[4], args[5], Phone, zip, args[8], args[9], args[10], args[11], args[12], args[13], remarks, profilePic, args[16], args[17])
-	case "QueryUser":
+	case "QueryAdminUser":
 		// args: userID
 		if len(args) != 1 {
 			return shim.Error("incorrect number of arguments. Expecting 1")
 		}
-		user, err := rc.QueryUser(stub, args[0])
+		user, err := rc.QueryAdminUser(stub, args[0])
 		if err != nil {
 			return shim.Error(fmt.Sprintf("Failed to query user: %v", err))
 		}
 		userBytes, _ := json.Marshal(user)
 		return shim.Success(userBytes)
-	case "UpdateUser":
+	case "AdminUpdateUser":
 		// args: userID, userID, companyName, firstName, lastName, email, phone, password
 		if len(args) != 18 {
 			return shim.Error("incorrect number of arguments. Expecting 17")
@@ -299,14 +299,14 @@ func (rc *RegistrationContract) Invoke(stub shim.ChaincodeStubInterface) peer.Re
 		if err != nil {
 			return shim.Error("Failed to convert zip to int: " + err.Error())
 		}
-		return rc.UpdateUser(stub, args[0], args[1], args[2], args[3], args[4], args[5], Phone, zip, args[8], args[9], args[10], args[11], args[12], args[13], remarks, profilePic, args[16], args[17])
+		return rc.AdminUpdateUser(stub, args[0], args[1], args[2], args[3], args[4], args[5], Phone, zip, args[8], args[9], args[10], args[11], args[12], args[13], remarks, profilePic, args[16], args[17])
 
-	case "GetUsersWithHashes":
+	case "GetAdminUsersWithHashes":
 		// Ensure that the number of arguments is correct
 		if len(args) == 0 {
 			return shim.Error("Incorrect number of arguments. Expecting at least one argument: IDs of Users.")
 		}
-		return rc.GetUsersWithHashes(stub, args)
+		return rc.GetAdminUsersWithHashes(stub, args)
 
 	default:
 		return shim.Error("Invalid function name.")

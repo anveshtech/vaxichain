@@ -867,14 +867,15 @@ peer chaincode invoke -o localhost:7050 \
 
 presetup
 packageChaincode
-# installChaincode
-# queryInstalled
-# approveForMyOrg1
-# approveForMyOrg2
-# checkCommitReadyness
-# commitChaincodeDefination
-# queryCommitted 
+installChaincode
+queryInstalled
+approveForMyOrg1
+approveForMyOrg2
+checkCommitReadyness
+commitChaincodeDefination
+queryCommitted 
 # check1
 # checkAdmin
 # dynamic
 # children
+

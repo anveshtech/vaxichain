@@ -59,4 +59,4 @@ sleep 5
 
 # sleep 3
 
-# ./deployChaincode.sh 
+./deployChaincode.sh 

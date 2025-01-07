@@ -101,17 +101,42 @@ const invokeTransaction = async (channelName, chaincodeName, fcn, args, userid, 
         else if (fcn === "CreateChild") {
             result = await contract.submitTransaction(fcn, ...args);
             txId = transaction.getTransactionId();
-            message = `Vacciantion Centers associated with Data Collecter  ID: ${args[0]}`;
+            message = `Successfully created Data Child  ID: ${args[0]}`;
         }
         else if (fcn === "UpdateChild") {
             result = await contract.submitTransaction(fcn, ...args);
             txId = transaction.getTransactionId();
-            message = `Vacciantion Centers associated with Data Collecter  ID: ${args[0]}`;
+            message = `Successfully created updated Data Child  ID: ${args[0]}`;
         }
         else if (fcn === "GetChildrenWithHashes") {
             result = await contract.submitTransaction(fcn, ...args);
             txId = transaction.getTransactionId();
-            message = `Vacciantion Centers associated with Data Collecter  ID: ${args[0]}`;
+            message = `Successfully made hash of given Children`;
+        }
+        else if (fcn === "CreateVaccine") {
+            result = await contract.submitTransaction(fcn, ...args);
+            txId = transaction.getTransactionId();
+            message = `Created Vaccine with Vaccine ID: ${args[0]}`;
+        }
+        else if (fcn === "GetVaccineWithHashes") {
+            result = await contract.submitTransaction(fcn, ...args);
+            txId = transaction.getTransactionId();
+            message = `Successfully made hash of given Vaccination`;
+        }
+        else if (fcn === "CreateAdminUser") {
+            result = await contract.submitTransaction(fcn, ...args);
+            txId = transaction.getTransactionId();
+            message = `Successfully made hash of given Vaccination`;
+        }
+        else if (fcn === "AddAdminUser") {
+            result = await contract.submitTransaction(fcn, ...args);
+            txId = transaction.getTransactionId();
+            message = `Successfully made hash of given Vaccination`;
+        }
+        else if (fcn === "GetAdminUsersWithHashes") {
+            result = await contract.submitTransaction(fcn, ...args);
+            txId = transaction.getTransactionId();
+            message = `Successfully made hash of given Vaccination`;
         }
          else {
             return `Invocation require${fcn}`

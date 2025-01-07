@@ -36,13 +36,13 @@ CAPEM=../../blockchain/artifacts/channel/crypto-config/peerOrganizations/dataver
 echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $low_org)" > connection-dataverifier.json
 
 
-ORG="Org3"
-low_org="org3"
+ORG="BsesTest"
+low_org="bsestest"
 P0PORT=11051
 CAPORT=11054
-PEERPEM=../../blockchain/artifacts/channel/crypto-config/peerOrganizations/org3.dataauth.com/peers/peer0.org3.dataauth.com/tls/tlscacerts/tls-localhost-11054-ca-org3-dataauth-com.pem
-CAPEM=../../blockchain/artifacts/channel/crypto-config/peerOrganizations/org3.dataauth.com/msp/tlscacerts/ca.crt
+PEERPEM=../../blockchain/artifacts/channel/crypto-config/peerOrganizations/bsestest.dataauth.com/peers/peer0.bsestest.dataauth.com/tls/tlscacerts/tls-localhost-11054-ca-bsestest-dataauth-com.pem
+CAPEM=../../blockchain/artifacts/channel/crypto-config/peerOrganizations/bsestest.dataauth.com/msp/tlscacerts/ca.crt
 
-echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $low_org)" > connection-org3.json
+echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $low_org)" > connection-bsestest.json
 
 echo " -------------------- Conncetion Profile Generated ----------------------- "

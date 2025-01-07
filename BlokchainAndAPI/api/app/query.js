@@ -41,14 +41,33 @@ const query = async (channelName, chaincodeName, args, fcn, username, org_name) 
         let result;
         
 
-        // * User
+        // * Company
         if (fcn == "QueryUser") {
             result = await contract.evaluateTransaction(fcn, args);
             console.log("---")
-        } else if (fcn == "QueryProduct") {
+        } else if (fcn == "QueryVaccinationCenter") {
+            result = await contract.evaluateTransaction(fcn, args);
+            console.log("---")
+        } else if (fcn == "QueryAllVaccinationCenters") {
+            result = await contract.evaluateTransaction(fcn, args);
+            console.log("---")
+        } else if (fcn == "getListOfAssignedVacCenterCollector") {
+            result = await contract.evaluateTransaction(fcn, args);
+            console.log("---")
+        }
+         else if (fcn == "QueryChild") {
             result = await contract.evaluateTransaction(fcn, args);
             console.log("---")
         } 
+         else if (fcn == "QueryUser") {
+            result = await contract.evaluateTransaction(fcn, args);
+            console.log("---")
+        }
+        else if (fcn == "QueryVaccine") {
+            result = await contract.evaluateTransaction(fcn, args);
+            console.log("---")
+        }
+        
         console.log(result)
         console.log(`Transaction has been evaluated, result is: ${result.toString()}`);
 

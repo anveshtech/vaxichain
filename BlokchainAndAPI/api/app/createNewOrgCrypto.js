@@ -356,14 +356,16 @@ const copyTLSCertificates = async(basePath, peerPath, domain) => {
 }
 
 const generateConfigProfile = async(org, P0PORT, CAPORT) => {
+
+    const low_org = org.toLowerCase();
+
     const peerCertPath = path.join(__dirname, `../../blockchain/artifacts/channel/crypto-config/peerOrganizations/${low_org}.dataauth.com/peers/peer0.${low_org}.dataauth.com/tls/tlscacerts/tls-localhost-${CAPORT}-ca-${low_org}-dataauth-com.pem`);
     const caCertPath = path.join(__dirname, `../../blockchain/artifacts/channel/crypto-config/peerOrganizations/${low_org}.dataauth.com/msp/tlscacerts/ca.crt`);
 
     const PEERPEM = fs.readFileSync(peerCertPath, 'utf8');
     const CAPEM = fs.readFileSync(caCertPath, 'utf8');
 
-    const low_org = org.toLowerCase();
-
+   
     const config = {
         "name": `first-network-${low_org}`,
         "version": "1.0.0",
@@ -425,6 +427,8 @@ const generateConfigProfile = async(org, P0PORT, CAPORT) => {
             console.log(`Connection profile saved to ${filePath}`);
         }
     });
+
+    return filePath;
 }
 
 const createOrg = async(orgName, caURL, adminName, adminPassword, orgDomain) => {

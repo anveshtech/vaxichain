@@ -1,0 +1,51 @@
+{
+    "name": "first-network-bsestest",
+    "version": "1.0.0",
+    "client": {
+        "organization": "BsesTest",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "BsesTest": {
+            "mspid": "BsesTestMSP",
+            "peers": [
+                "peer0.bsestest.dataauth.com"
+            ],
+            "certificateAuthorities": [
+                "ca.bsestest.dataauth.com"
+            ]   
+        }
+    },
+    "peers": {
+        "peer0.bsestest.dataauth.com": {
+            "url": "grpcs://localhost:11051",
+            "tlsCACerts": {
+                "pem": ""
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.bsestest.dataauth.com",
+                "hostnameOverride": "peer0.bsestest.dataauth.com"
+            }
+        }
+
+	
+    },
+    "certificateAuthorities": {
+        "ca.bsestest.dataauth.com": {
+            "url": "https://localhost:11054",
+            "caName": "ca.bsestest.dataauth.com",
+            "tlsCACerts": {
+                "pem": ""
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}

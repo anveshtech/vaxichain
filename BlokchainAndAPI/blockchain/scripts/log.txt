@@ -1,7 +1,7 @@
 Installed chaincodes on peer:
 Package ID: DataVerifier_1:8a04987c0960a9fb4902ba0b448c38f79598bf9e7595162ff82060276c1a21b7, Label: DataVerifier_1
 Package ID: DataCollector_1:599b3f2eb8195b6f74026ff0681446ce3805a643d2842e2eaba979f111bb8e60, Label: DataCollector_1
-Package ID: Registration_1:f4ab3e02b2ada4cd775d97a8b99f5d4e26f765f111cf9bfd5205663993608668, Label: Registration_1
+Package ID: Registration_1:bc4421ef505065f601f3b2f3b7522c3e523cef8745d9ae482e351d373bfcfdb0, Label: Registration_1
 Package ID: VaccinationOrg_1:945e9dad0b9a9da17b74282317141f462fa1c42ae070b9cec0e099b23c4a7762, Label: VaccinationOrg_1
 Package ID: Children_1:a6cd59c0de9a2c66eb9338282e72bb0673cca717c8336819f98c0a1190731f56, Label: Children_1
 Package ID: Vaccination_1:f4ba4e27579d9741d25394fcd9e6e4dcb13b1afeeae8ccfc88e7f737ac4eb0a2, Label: Vaccination_1
